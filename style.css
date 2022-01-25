@@ -93,7 +93,7 @@ nav{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 230px;
+    width: 210px;
     margin-top: 11px;
     background-color: #fff;
     opacity: 0;
@@ -109,6 +109,7 @@ nav{
 }
 .menu ul li ul li{
     border-bottom: 1px solid #ddd;
+    display: block;
 }
 .menu ul li i{
     color: #010101;
