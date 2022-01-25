@@ -71,6 +71,10 @@ nav{
     padding: 0 20px;
     font-size: 17px;
     line-height: 60px;
+    transition: .4s;
+}
+.menu ul li a:hover{
+    color: #6278DF;
 }
 .header-button{
     width: 14%;
@@ -103,6 +107,9 @@ nav{
     visibility: visible;
     transform: scaleY(1);
 }
+.menu ul li ul li{
+    border-bottom: 1px solid #ddd;
+}
 .menu ul li i{
     color: #010101;
     font-size: 18px;
@@ -111,28 +118,28 @@ nav{
 
 /* BANNER SECTION CSS START */ 
 .banner{
-    background-image: url(https://i.ibb.co/PmHFfFy/02.jpg);
+    background: url(./banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    padding: 150px 0;
+    padding: 200px 0;
     position: relative;
+    z-index: 1;
 }
-.banner::after{
+.banner::before{
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, 0.514);
     z-index: -1;
 }
 .banner-text{
     text-align: center;
-    color: white;
+    color: white;  
 }
 .banner-text h3{
     font-size: 26px;
